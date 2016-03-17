@@ -30,8 +30,8 @@ Get_Profile_Card_URL = Zhihu_URL + '/node/MemberProfileCardV2'
 Question_Get_More_Answer_URL = Zhihu_URL + '/node/QuestionAnswerListV2'
 Author_Get_More_Followers_URL = Zhihu_URL + '/node/ProfileFollowersListV2'
 Author_Get_More_Followees_URL = Zhihu_URL + '/node/ProfileFolloweesListV2'
-PROTOCOL = ''
 
+PROTOCOL = ''
 Column_Url = 'http://zhuanlan.zhihu.com'
 Column_API = Column_Url + '/api/columns'
 Column_Data = Column_API + '/{0}'
@@ -110,7 +110,6 @@ def class_common_init(url_re, allowed_none=False):
 
 def remove_invalid_char(text):
     """去除字符串中的无效字符，一般用于保存文件时保证文件名的有效性.
-
     :param str text: 待处理的字符串
     :return: 处理后的字符串
     :rtype: str
